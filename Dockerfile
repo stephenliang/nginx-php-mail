@@ -3,9 +3,3 @@ MAINTAINER Stephen Liang "docker-maint@stephenliang.pw"
 
 RUN pear install mail
 RUN pear install Net_SMTP
-
-VOLUME ["/var/cache/nginx"]
-
-EXPOSE 80 443
-
-CMD ["nginx", "-g", "daemon off;"]
